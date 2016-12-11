@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "PZXVerificationCodeView.h"
 
 @interface ViewController ()
+
+@property(nonatomic,strong)PZXVerificationCodeView *pzxView;
+@property(nonatomic,strong)UITextField *TF;
+- (IBAction)changeButtonPressed:(UIButton *)sender;
+- (IBAction)outButtonPressed:(UIButton *)sender;
 
 @end
 
@@ -17,13 +23,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    _pzxView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
+    _pzxView.selectedColor = [UIColor blackColor];
+//    _pzxView.deselectColor = [UIColor cyanColor];
+    _pzxView.VerificationCodeNum = 4;
+//    _pzxView.isSecure = YES;
+    [self.view addSubview:_pzxView];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 
+- (IBAction)changeButtonPressed:(UIButton *)sender {
+    
+    _pzxView.isSecure = !_pzxView.isSecure;
+}
+
+- (IBAction)outButtonPressed:(UIButton *)sender {
+    
+    UIAlertController  *alert = [UIAlertController alertControllerWithTitle:@"验证码" message:[NSString stringWithFormat:@"%@",_pzxView.vertificationCode] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    for (UITextField *tf in _pzxView.textFieldArray) {
+        
+        [tf resignFirstResponder];
+    }
+    
+    
+}
 @end

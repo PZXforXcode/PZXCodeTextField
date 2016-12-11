@@ -13,6 +13,9 @@
 		70B85E741DFD059A00D78A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E721DFD059A00D78A94 /* Main.storyboard */; };
 		70B85E761DFD059A00D78A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E751DFD059A00D78A94 /* Assets.xcassets */; };
 		70B85E791DFD059A00D78A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E771DFD059A00D78A94 /* LaunchScreen.storyboard */; };
+		70B85E831DFD060E00D78A94 /* PZXVerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B85E821DFD060E00D78A94 /* PZXVerificationCodeView.m */; };
+		70B85E861DFD2DCB00D78A94 /* PZXVerificationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B85E851DFD2DCB00D78A94 /* PZXVerificationTextField.m */; };
+		70B85E881DFD500E00D78A94 /* pzxYZM.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E871DFD500E00D78A94 /* pzxYZM.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		70B85E751DFD059A00D78A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70B85E781DFD059A00D78A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70B85E7A1DFD059A00D78A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B85E811DFD060E00D78A94 /* PZXVerificationCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationCodeView.h; sourceTree = "<group>"; };
+		70B85E821DFD060E00D78A94 /* PZXVerificationCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationCodeView.m; sourceTree = "<group>"; };
+		70B85E841DFD2DCB00D78A94 /* PZXVerificationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationTextField.h; sourceTree = "<group>"; };
+		70B85E851DFD2DCB00D78A94 /* PZXVerificationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationTextField.m; sourceTree = "<group>"; };
+		70B85E871DFD500E00D78A94 /* pzxYZM.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pzxYZM.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,12 @@
 		70B85E681DFD059A00D78A94 /* PZXVerificationCodeTextField */ = {
 			isa = PBXGroup;
 			children = (
+				70B85E801DFD05DC00D78A94 /* PZXVerificationCodeTextField */,
 				70B85E6C1DFD059A00D78A94 /* AppDelegate.h */,
 				70B85E6D1DFD059A00D78A94 /* AppDelegate.m */,
 				70B85E6F1DFD059A00D78A94 /* ViewController.h */,
 				70B85E701DFD059A00D78A94 /* ViewController.m */,
+				70B85E871DFD500E00D78A94 /* pzxYZM.gif */,
 				70B85E721DFD059A00D78A94 /* Main.storyboard */,
 				70B85E751DFD059A00D78A94 /* Assets.xcassets */,
 				70B85E771DFD059A00D78A94 /* LaunchScreen.storyboard */,
@@ -77,6 +87,17 @@
 				70B85E6A1DFD059A00D78A94 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70B85E801DFD05DC00D78A94 /* PZXVerificationCodeTextField */ = {
+			isa = PBXGroup;
+			children = (
+				70B85E811DFD060E00D78A94 /* PZXVerificationCodeView.h */,
+				70B85E821DFD060E00D78A94 /* PZXVerificationCodeView.m */,
+				70B85E841DFD2DCB00D78A94 /* PZXVerificationTextField.h */,
+				70B85E851DFD2DCB00D78A94 /* PZXVerificationTextField.m */,
+			);
+			path = PZXVerificationCodeTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B85E881DFD500E00D78A94 /* pzxYZM.gif in Resources */,
 				70B85E791DFD059A00D78A94 /* LaunchScreen.storyboard in Resources */,
 				70B85E761DFD059A00D78A94 /* Assets.xcassets in Resources */,
 				70B85E741DFD059A00D78A94 /* Main.storyboard in Resources */,
@@ -152,8 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70B85E711DFD059A00D78A94 /* ViewController.m in Sources */,
+				70B85E861DFD2DCB00D78A94 /* PZXVerificationTextField.m in Sources */,
 				70B85E6E1DFD059A00D78A94 /* AppDelegate.m in Sources */,
 				70B85E6B1DFD059A00D78A94 /* main.m in Sources */,
+				70B85E831DFD060E00D78A94 /* PZXVerificationCodeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

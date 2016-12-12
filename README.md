@@ -3,7 +3,7 @@
 效果图:
 ![image](https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/pzxYZM.gif)
 
-<div><div><br></div><div>**Usage**
+<div><div><br></div><div>**Usage:**
 ```Objective-C
     _pzxView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
     _pzxView.selectedColor = [UIColor blackColor];

@@ -22,7 +22,7 @@
     if (self) {
         
         self.VerificationCodeNum = 4;//默认4位
-        
+        self.Spacing = 0;//默认间距为0
         self.selectedColor = [UIColor cyanColor];
         self.deselectColor = [UIColor redColor];   //默认边框颜色
 
@@ -53,13 +53,14 @@
     
     for (int i = 0 ; i<self.VerificationCodeNum; i++) {
         
-        PZXVerificationTextField *tf = [[PZXVerificationTextField alloc]initWithFrame:CGRectMake(i*self.frame.size.width/self.VerificationCodeNum+self.VerificationCodeNum, 0, self.frame.size.width/self.VerificationCodeNum - self.VerificationCodeNum*2 , self.frame.size.height)];
+        PZXVerificationTextField *tf = [[PZXVerificationTextField alloc]initWithFrame:CGRectMake(i*self.frame.size.width/self.VerificationCodeNum+_Spacing/2, 0, self.frame.size.width/self.VerificationCodeNum - _Spacing , self.frame.size.height)];
         tf.backgroundColor = [UIColor clearColor];
         tf.pzx_delegate = self;
         tf.keyboardType = UIKeyboardTypeNumberPad;
         tf.layer.borderColor = self.deselectColor.CGColor;
         tf.layer.borderWidth = 0.5;
-        tf.layer.cornerRadius = 6;
+        //圆弧度
+//        tf.layer.cornerRadius = 6;
         tf.delegate = self;
         tf.tag = 100+i;
         tf.textAlignment = NSTextAlignmentCenter;
@@ -137,6 +138,11 @@
     _VerificationCodeNum = VerificationCodeNum;
     [self setView];
     
+}
+-(void)setSpacing:(CGFloat)Spacing{
+
+    _Spacing = Spacing;
+    [self setView];
 }
 
 

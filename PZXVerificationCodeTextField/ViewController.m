@@ -28,9 +28,11 @@
     
     _pzxView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
     _pzxView.selectedColor = [UIColor blackColor];
+//    _pzxView.center = self.view.center;
 //    _pzxView.deselectColor = [UIColor cyanColor];
-    _pzxView.VerificationCodeNum = 4;
+    _pzxView.VerificationCodeNum = 6;
 //    _pzxView.isSecure = YES;
+    _pzxView.Spacing = 0;//每个格子间距属性
     [self.view addSubview:_pzxView];
 }
 
@@ -59,11 +61,12 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
+    
     for (UITextField *tf in _pzxView.textFieldArray) {
         
         [tf resignFirstResponder];
     }
-    
+//    [self.view endEditing:YES];
     
 }
 @end

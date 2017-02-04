@@ -14,6 +14,9 @@
 
 @property(nonatomic,assign)BOOL isSecure;//是否密文显示
 
+@property(nonatomic,assign)CGFloat Spacing;//每个格子间距
+
+
 @property (nonatomic, strong,readonly) NSString *vertificationCode;//验证码内容
 
 @property (nonatomic, strong)UIColor *deselectColor;//未选中颜色

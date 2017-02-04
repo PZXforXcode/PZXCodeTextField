@@ -16,6 +16,7 @@
 		70B85E831DFD060E00D78A94 /* PZXVerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B85E821DFD060E00D78A94 /* PZXVerificationCodeView.m */; };
 		70B85E861DFD2DCB00D78A94 /* PZXVerificationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B85E851DFD2DCB00D78A94 /* PZXVerificationTextField.m */; };
 		70B85E881DFD500E00D78A94 /* pzxYZM.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E871DFD500E00D78A94 /* pzxYZM.gif */; };
+		89E3BE991E45727F00A031A2 /* vDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89E3BE981E45727F00A031A2 /* vDemo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		70B85E841DFD2DCB00D78A94 /* PZXVerificationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationTextField.h; sourceTree = "<group>"; };
 		70B85E851DFD2DCB00D78A94 /* PZXVerificationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationTextField.m; sourceTree = "<group>"; };
 		70B85E871DFD500E00D78A94 /* pzxYZM.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pzxYZM.gif; sourceTree = "<group>"; };
+		89E3BE981E45727F00A031A2 /* vDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vDemo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				70B85E6F1DFD059A00D78A94 /* ViewController.h */,
 				70B85E701DFD059A00D78A94 /* ViewController.m */,
 				70B85E871DFD500E00D78A94 /* pzxYZM.gif */,
+				89E3BE981E45727F00A031A2 /* vDemo.gif */,
 				70B85E721DFD059A00D78A94 /* Main.storyboard */,
 				70B85E751DFD059A00D78A94 /* Assets.xcassets */,
 				70B85E771DFD059A00D78A94 /* LaunchScreen.storyboard */,
@@ -162,6 +165,7 @@
 				70B85E881DFD500E00D78A94 /* pzxYZM.gif in Resources */,
 				70B85E791DFD059A00D78A94 /* LaunchScreen.storyboard in Resources */,
 				70B85E761DFD059A00D78A94 /* Assets.xcassets in Resources */,
+				89E3BE991E45727F00A031A2 /* vDemo.gif in Resources */,
 				70B85E741DFD059A00D78A94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +340,7 @@
 				70B85E7F1DFD059A00D78A94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -75,7 +75,8 @@
 #pragma mark - PZXTextFieldDelegate
 -(void)PZXTextFieldDeleteBackward:(PZXVerificationTextField *)textField{
     
-    if (textField.tag > [[_textFieldArray firstObject] tag]) {
+    PZXVerificationTextField *tf = [_textFieldArray firstObject];
+    if (textField.tag > tf.tag) {
         
         UITextField *newTF =  (UITextField *)[self viewWithTag:textField.tag-1];
         newTF.text = @"";
@@ -91,10 +92,10 @@
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
 
     textField.text = string;
-    
+    UITextField *tf = [_textFieldArray lastObject];
     if (textField.text.length > 0) {//防止退格第一个的时候往后跳一格
         
-        if (textField.tag<  [[_textFieldArray lastObject] tag]) {
+        if (textField.tag<  tf.tag) {
             
             UITextField *newTF =  (UITextField *)[self viewWithTag:textField.tag+1];
             

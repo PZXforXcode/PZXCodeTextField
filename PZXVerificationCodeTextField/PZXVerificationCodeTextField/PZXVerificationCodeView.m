@@ -57,6 +57,8 @@
         tf.backgroundColor = [UIColor clearColor];
         tf.pzx_delegate = self;
         tf.keyboardType = UIKeyboardTypeNumberPad;
+        tf.textColor = [UIColor blackColor];
+        tf.inputView =nil;
         tf.layer.borderColor = self.deselectColor.CGColor;
         tf.layer.borderWidth = 0.5;
         //圆弧度
@@ -105,6 +107,7 @@
     }else{
     
     }
+    [self getVertificationCode];
 
     return NO;
 }

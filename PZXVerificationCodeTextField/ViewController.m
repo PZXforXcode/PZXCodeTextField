@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import "PZXVerificationCodeView.h"
+#import "PZXVerificationCodeTextField-Swift.h" // 自动生成的Swift桥接头文件
 
-@interface ViewController ()
+@interface ViewController () <PZXCodeInputViewDelegate>
 
 @property(nonatomic,strong)PZXVerificationCodeView *pzxView;
 @property(nonatomic,strong)UITextField *TF;
@@ -28,18 +29,32 @@
     
     _pzxView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
     _pzxView.selectedColor = [UIColor blackColor];
-//    _pzxView.center = self.view.center;
-//    _pzxView.deselectColor = [UIColor cyanColor];
+    //    _pzxView.center = self.view.center;
+    //    _pzxView.deselectColor = [UIColor cyanColor];
     _pzxView.VerificationCodeNum = 6;
-//    _pzxView.isSecure = YES;
+    //    _pzxView.isSecure = YES;
     _pzxView.Spacing = 0;//每个格子间距属性
     [self.view addSubview:_pzxView];
+    
+    
+    PZXCodeInputView *codeInputView = [[PZXCodeInputView alloc] initWithNumberOfFields:4];
+    codeInputView.translatesAutoresizingMaskIntoConstraints = NO;
+    codeInputView.delegate = self;
+    [self.view addSubview:codeInputView];
+    
+    [NSLayoutConstraint activateConstraints:@[
+        [codeInputView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
+        [codeInputView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
+        [codeInputView.heightAnchor constraintEqualToConstant:50],
+        [codeInputView.widthAnchor constraintEqualToConstant:300]
+    ]];
+    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-
+    
 }
 
 
@@ -66,7 +81,14 @@
         
         [tf resignFirstResponder];
     }
-//    [self.view endEditing:YES];
+    //    [self.view endEditing:YES];
     
+}
+
+#pragma mark - PZXCodeInputViewDelegate
+
+- (void)codeInputViewDidFinishInput:(PZXCodeInputView *)inputView code:(NSString *)code {
+    NSLog(@"Code entered: %@", code);
+    // 在这里处理输入完成后的逻辑
 }
 @end

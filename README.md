@@ -9,6 +9,7 @@
 ## 效果图2:
 ![紧贴样式](https://upload-images.jianshu.io/upload_images/19409325-2b23124e901fd1a2.gif?imageMogr2/auto-orient/strip)
 ## Usage:
+Objective-C
 ```Objective-C
     _pzxView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
     _pzxView.selectedColor = [UIColor blackColor];
@@ -17,6 +18,30 @@
 //    _pzxView.isSecure = YES;
       _pzxView.Spacing = 0;//每个格子间距属性
    [self.view addSubview:_pzxView];
+```
+Swift
+```Swift
+        override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        let codeInputView = PZXCodeInputView(numberOfFields: 4)
+        codeInputView.translatesAutoresizingMaskIntoConstraints = false
+        codeInputView.delegate = self
+        view.addSubview(codeInputView)
+        
+        NSLayoutConstraint.activate([
+            codeInputView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            codeInputView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            codeInputView.heightAnchor.constraint(equalToConstant: 50),
+            codeInputView.widthAnchor.constraint(equalToConstant: 300)
+        ])
+    }
+    
+    func codeInputViewDidFinishInput(_ inputView: PZXCodeInputView, code: String) {
+        print("Code entered: \(code)")
+        // 在这里处理输入完成后的逻辑
+    }
 ```
 下载地址：https://github.com/PZXforXcode/PZXVerificationCodeTextField
 

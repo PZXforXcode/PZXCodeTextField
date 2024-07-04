@@ -7,6 +7,9 @@ Chinese:
 
 一个按格分割的验证码或者密码输入控件，可以自定义大小和输入位数以及选中边框颜色等。类似uberAPP的验证码输入功能，有什么问题或者建议可以加我Vx：KpengS  
 
+- [x] Objective-C compatibility
+- [x] Swift 5 support
+
 ## 新增效果/New Features
 <img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="375" height="800">
 
@@ -14,6 +17,16 @@ Chinese:
 ![分开样式](https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip)
 ## 效果图2:/Effect 2:
 ![紧贴样式](https://upload-images.jianshu.io/upload_images/19409325-2b23124e901fd1a2.gif?imageMogr2/auto-orient/strip)
+
+## Requirements
+----------------
+- iOS 12.0+
+- Xcode 15+
+## Manually
+----------------
+1. Download and drop ```/PZXVerificationCodeTextField``` folder in your project.  
+2. Congratulations!
+
 ## Usage:
 Objective-C
 ```Objective-C

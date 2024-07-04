@@ -9,6 +9,7 @@ Chinese:
 
 ## 新增效果/New Features
 ![分开样式](https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg)
+<img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="375" height="800">
 ## 效果图1:/Effect 1:
 ![分开样式](https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip)
 ## 效果图2:/Effect 2:

@@ -8,8 +8,7 @@ Chinese:
 一个按格分割的验证码或者密码输入控件，可以自定义大小和输入位数以及选中边框颜色等。类似uberAPP的验证码输入功能，有什么问题或者建议可以加我Vx：KpengS  
 
 ## 新增效果/New Features
-<img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="300" height="800">
-
+<img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="375" height="800">
 
 ## 效果图1:/Effect 1:
 ![分开样式](https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip)

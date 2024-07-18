@@ -11,10 +11,11 @@ Chinese:
 - [x] Swift 5 support
 
 ## 新增效果/New Features
-<img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="375" height="800">
+<img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="190" height="400">
 
 ## 效果图1:/Effect 1:
-![分开样式](https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip)
+<img src="https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip" width="190" height="400">
+<!-- ![分开样式](https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip) -->
 ## 效果图2:/Effect 2:
 ![紧贴样式](https://upload-images.jianshu.io/upload_images/19409325-2b23124e901fd1a2.gif?imageMogr2/auto-orient/strip)
 

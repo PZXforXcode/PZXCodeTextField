@@ -10,25 +10,37 @@ Chinese:
 - [x] Objective-C compatibility
 - [x] Swift 5 support
 
-## 新增效果/New Features
+## New Features / 新增效果
+横线输入框
 <img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="190" height="400">
 
-## 效果图1:/Effect 1:
+## Effect: / 效果图:
 <img src="https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip" width="190" height="400">
 <!-- ![分开样式](https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip) -->
-## 效果图2:/Effect 2:
-![紧贴样式](https://upload-images.jianshu.io/upload_images/19409325-2b23124e901fd1a2.gif?imageMogr2/auto-orient/strip)
 
-## Requirements
+
+## Requirements / 支持
 ----------------
 - iOS 12.0+
 - Xcode 15+
-## Manually
+
+## Install / 安装
+### Manually / 手动
 ----------------
 1. Download and drop ```/PZXVerificationCodeTextField``` folder in your project.  
 2. Congratulations!
+### CocoaPods
+pod 文件新增
+To integrate PZXCodeTextField into your Xcode project using CocoaPods, specify it in your Podfile:
 
-## Usage:
+```
+target '<Your Target Name>' do
+  	pod 'PZXCodeTextField'
+end
+```
+
+
+## Usage: / 使用:
 Objective-C
 ```Objective-C
     _pzxView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
@@ -44,6 +56,13 @@ Swift
         override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+
+        let codeView = PZXVerificationCodeView.init(frame: CGRect(x: 0, y: 100, width: SCREEN_WIDTH, height: 60))
+        codeView.selectedColor = .black
+        codeView.verificationCodeNum = 4
+        codeView.spacing = 8
+        self.view.addSubview(codeView)
         
         let codeInputView = PZXCodeInputView(numberOfFields: 4)
         codeInputView.translatesAutoresizingMaskIntoConstraints = false

@@ -1,4 +1,6 @@
 # PZXCodeTextField
+
+## intro / 简介
 EN:  
 
 A segmented verification code or password input control that allows customization of size, input digits, and selected border color, among other options. Similar to the verification code input feature in the Uber app. If you have any questions or suggestions, feel free to add me on WeChat: KpengS.  
@@ -7,12 +9,13 @@ Chinese:
 
 一个按格分割的验证码或者密码输入控件，可以自定义大小和输入位数以及选中边框颜色等。类似uberAPP的验证码输入功能，有什么问题或者建议可以加我Vx：KpengS  
 
+## Overview / 概述
 - [x] Objective-C compatibility
 - [x] Swift 5 support
 - [x] Custom style
-- [x] Objective-C compatibility
-- [x] Swift 5 support
-- [x] Custom style
+- [x] line input box
+- [x] Quick Setup
+- [x] Continuous Updates
 
 
 

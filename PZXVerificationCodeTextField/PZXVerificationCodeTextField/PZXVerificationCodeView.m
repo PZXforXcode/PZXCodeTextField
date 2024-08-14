@@ -93,23 +93,39 @@
 //代理（里面有自己的密码线）
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
 
-    textField.text = string;
-    UITextField *tf = [_textFieldArray lastObject];
-    if (textField.text.length > 0) {//防止退格第一个的时候往后跳一格
-        
-        if (textField.tag<  tf.tag) {
-            
-            UITextField *newTF =  (UITextField *)[self viewWithTag:textField.tag+1];
-            
-            [newTF becomeFirstResponder];
+    // 处理粘贴多个字符的情况
+    if (string.length > 1) {
+        NSMutableArray *textFields = [NSMutableArray arrayWithArray:self.textFieldArray];
+        NSInteger currentIndex = textField.tag - 100; // 假设第一个文本框的 tag 为 100
+        for (NSUInteger i = 0; i < string.length; i++) {
+            if (currentIndex + i < textFields.count) {
+                UITextField *tf = textFields[currentIndex + i];
+                tf.text = [NSString stringWithFormat:@"%c", [string characterAtIndex:i]];
+                [tf becomeFirstResponder];
+            }
         }
-
-    }else{
-    
+        
+        // 清除剩余的文本框
+        for (NSUInteger i = currentIndex + string.length; i < textFields.count; i++) {
+            UITextField *tf = textFields[i];
+            tf.text = @"";
+        }
+        
+        [self getVertificationCode];
+        return NO;
+    } else {
+        // 处理单字符输入
+        textField.text = string;
+        UITextField *tf = [_textFieldArray lastObject];
+        if (textField.text.length > 0) {
+            if (textField.tag < tf.tag) {
+                UITextField *newTF =  (UITextField *)[self viewWithTag:textField.tag + 1];
+                [newTF becomeFirstResponder];
+            }
+        }
+        [self getVertificationCode];
+        return NO;
     }
-    [self getVertificationCode];
-
-    return NO;
 }
 
 //在里面改变选中状态以及获取验证码

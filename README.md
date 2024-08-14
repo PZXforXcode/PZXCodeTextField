@@ -39,8 +39,8 @@ Chinese:
 1. Download and drop ```/PZXVerificationCodeTextField``` folder in your project.  
 2. Congratulations!
 ### CocoaPods
-pod 文件新增
-To integrate PZXCodeTextField into your Xcode project using CocoaPods, specify it in your Podfile:
+##### pod 文件新增
+##### To integrate PZXCodeTextField into your Xcode project using CocoaPods, specify it in your Podfile:
 
 ```
 target '<Your Target Name>' do

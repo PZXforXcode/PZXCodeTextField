@@ -9,14 +9,20 @@ Chinese:
 
 - [x] Objective-C compatibility
 - [x] Swift 5 support
+- [x] Custom style
+- [x] Objective-C compatibility
+- [x] Swift 5 support
+- [x] Custom style
+
+
 
 ## New Features / 新增效果
-横线输入框
-<img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="190" height="400">
 
-## Effect: / 效果图:
-<img src="https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip" width="190" height="400">
-<!-- ![分开样式](https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip) -->
+| Features | 效果图: |
+| --- | --- |
+| **横线输入框** <br> <img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="190" height="400"> | **效果图** <br> <img src="https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip" width="190" height="400"> |
+
+
 
 
 ## Requirements / 支持

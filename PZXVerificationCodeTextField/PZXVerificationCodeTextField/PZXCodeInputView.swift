@@ -7,14 +7,14 @@
 
 import UIKit
 
-@objc protocol PZXCodeInputViewDelegate: AnyObject {
+@objc public protocol PZXCodeInputViewDelegate: AnyObject {
     func codeInputViewDidFinishInput(_ inputView: PZXCodeInputView, code: String)
 }
 
 
 import UIKit
 
-@objc class PZXCodeInputView: UIView, UITextFieldDelegate {
+@objc public class PZXCodeInputView: UIView, UITextFieldDelegate {
     
     private var labels: [UILabel] = []
     private let textField = UITextField()
@@ -24,7 +24,7 @@ import UIKit
     
     @objc weak var delegate: PZXCodeInputViewDelegate?
     
-@objc init(numberOfFields: Int = 6) {
+@objc public init(numberOfFields: Int = 6) {
         self.numberOfFields = numberOfFields
         super.init(frame: .zero)
         setupView()
@@ -85,11 +85,11 @@ import UIKit
         }
     }
     
-    @objc override func becomeFirstResponder() -> Bool {
+    @objc public override func becomeFirstResponder() -> Bool {
         textField.becomeFirstResponder()
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let currentText = textField.text else { return false }
         let newLength = currentText.count + string.count - range.length
         if newLength <= numberOfFields {

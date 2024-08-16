@@ -32,7 +32,7 @@ Chinese:
 
 | 下划线输入框 | 动效 | 
 | --- | --- |
-| <br> <img src="[下横线输入框](https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/2024.PNG)" width="190" height="400"> |<br> <img src="[动效3](https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/yxm2024.GIF)" width="190" height="400"> 
+| <br> <img src="[下横线输入框](https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/2024.png)" width="190" height="400"> |<br> <img src="[动效3](https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/yxm2024.GIF)" width="190" height="400"> 
 
 
 ## Requirements / 支持

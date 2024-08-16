@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,14 +20,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1l-XF-97S">
-                                <rect key="frame" x="153" y="332" width="108" height="30"/>
+                                <rect key="frame" x="153" y="632" width="108" height="30"/>
                                 <state key="normal" title="输出此时验证码"/>
                                 <connections>
                                     <action selector="outButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icw-sU-sW7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEK-C8-JMo">
-                                <rect key="frame" x="20" y="44" width="92" height="30"/>
+                                <rect key="frame" x="20" y="48" width="92" height="30"/>
                                 <state key="normal" title="切换明文密文"/>
                                 <connections>
                                     <action selector="changeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Roz-f0-sfC"/>
@@ -39,7 +39,7 @@
                             <constraint firstItem="GEK-C8-JMo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="asP-fO-GtX"/>
                             <constraint firstItem="GEK-C8-JMo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dPO-sF-mNC"/>
                             <constraint firstItem="y1l-XF-97S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sd7-HB-xti"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y1l-XF-97S" secondAttribute="bottom" constant="500" id="tcs-Ca-YZG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y1l-XF-97S" secondAttribute="bottom" constant="200" id="tcs-Ca-YZG"/>
                         </constraints>
                     </view>
                 </viewController>

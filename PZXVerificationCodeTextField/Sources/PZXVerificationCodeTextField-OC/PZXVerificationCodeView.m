@@ -23,6 +23,7 @@
         
         self.VerificationCodeNum = 4;//默认4位
         self.Spacing = 0;//默认间距为0
+        self.lineStyle = false; //默认是格子样式
         self.selectedColor = [UIColor cyanColor];
         self.deselectColor = [UIColor redColor];   //默认边框颜色
 
@@ -42,36 +43,47 @@
     }
 
 }
--(void)setView{
 
-    
+-(void)setView {
     self.textFieldArray = [NSMutableArray array];
-    NSArray *views = [self subviews];
-    for (UITextField *tf in views) {
-        [tf removeFromSuperview];
+    
+    // Remove any existing subviews (text fields and lines)
+    for (UIView *view in [self subviews]) {
+        [view removeFromSuperview];
     }
     
-    for (int i = 0 ; i<self.VerificationCodeNum; i++) {
-        
-        PZXVerificationTextField *tf = [[PZXVerificationTextField alloc]initWithFrame:CGRectMake(i*self.frame.size.width/self.VerificationCodeNum+_Spacing/2, 0, self.frame.size.width/self.VerificationCodeNum - _Spacing , self.frame.size.height)];
+    CGFloat textFieldWidth = self.frame.size.width / self.VerificationCodeNum - _Spacing;
+    
+    for (int i = 0; i < self.VerificationCodeNum; i++) {
+        // Create the text field
+        PZXVerificationTextField *tf = [[PZXVerificationTextField alloc] initWithFrame:CGRectMake(i * (self.frame.size.width / self.VerificationCodeNum) + _Spacing / 2, 0, textFieldWidth, self.frame.size.height)];
         tf.backgroundColor = [UIColor clearColor];
         tf.pzx_delegate = self;
         tf.keyboardType = UIKeyboardTypeNumberPad;
         tf.textColor = [UIColor blackColor];
-        tf.inputView =nil;
-        tf.layer.borderColor = self.deselectColor.CGColor;
-        tf.layer.borderWidth = 0.5;
-        //圆弧度
-//        tf.layer.cornerRadius = 6;
+        tf.inputView = nil;
         tf.delegate = self;
-        tf.tag = 100+i;
+        tf.tag = 100 + i;
         tf.textAlignment = NSTextAlignmentCenter;
         tf.secureTextEntry = self.isSecure;
+        
+        if (self.lineStyle) {
+            // If lineStyle is true, remove border and add a line below the text field
+            tf.layer.borderWidth = 0.0;
+            UIView *line = [[UIView alloc] initWithFrame:CGRectMake(tf.frame.origin.x, CGRectGetMaxY(tf.frame) - 1, textFieldWidth, 1)];
+            line.backgroundColor = self.deselectColor;
+            line.tag = 1000 + i;
+            [self addSubview:line];
+        } else {
+            tf.layer.borderColor = self.deselectColor.CGColor;
+            tf.layer.borderWidth = 0.5;
+        }
+        
         [self addSubview:tf];
         [self.textFieldArray addObject:tf];
-        
     }
 }
+
 
 //点击退格键的代理
 #pragma mark - PZXTextFieldDelegate
@@ -132,12 +144,17 @@
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
 
     textField.layer.borderColor = self.selectedColor.CGColor;
+    UIView *line =  (UIView *)[self viewWithTag:textField.tag + 900];
+    line.backgroundColor = self.selectedColor;
     [self getVertificationCode];
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     
     textField.layer.borderColor = self.deselectColor.CGColor;
+    UIView *line =  (UIView *)[self viewWithTag:textField.tag + 900];
+    line.backgroundColor = self.deselectColor;
+
     [self getVertificationCode];
 }
 
@@ -162,6 +179,12 @@
 -(void)setSpacing:(CGFloat)Spacing{
 
     _Spacing = Spacing;
+    [self setView];
+}
+
+- (void)setLineStyle:(BOOL)lineStyle{
+    
+    _lineStyle = lineStyle;
     [self setView];
 }
 

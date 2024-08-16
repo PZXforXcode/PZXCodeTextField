@@ -12,10 +12,13 @@
 
 @interface ViewController () <PZXCodeInputViewDelegate>
 
-@property(nonatomic,strong)PZXVerificationCodeView *pzxView;
+@property(nonatomic,strong)PZXVerificationCodeView *cellView;
 @property(nonatomic,strong)UITextField *TF;
 - (IBAction)changeButtonPressed:(UIButton *)sender;
 - (IBAction)outButtonPressed:(UIButton *)sender;
+
+@property(nonatomic,strong)PZXVerificationCodeView *bottomLineInputView;
+
 
 @end
 
@@ -27,14 +30,24 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
-    _pzxView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
-    _pzxView.selectedColor = [UIColor blackColor];
+    _cellView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
+    _cellView.selectedColor = [UIColor blackColor];
     //    _pzxView.center = self.view.center;
     //    _pzxView.deselectColor = [UIColor cyanColor];
-    _pzxView.VerificationCodeNum = 6;
-    //    _pzxView.isSecure = YES;
-    _pzxView.Spacing = 0;//每个格子间距属性
-    [self.view addSubview:_pzxView];
+    _cellView.VerificationCodeNum = 6;
+    //    _pzxView.isSecure = YES;//密文
+    _cellView.Spacing = 0;//每个格子间距属性
+    [self.view addSubview:_cellView];
+    
+    
+    _bottomLineInputView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(16, 300, self.view.frame.size.width - 32, 60)];
+    _bottomLineInputView.selectedColor = [UIColor blackColor];
+    _bottomLineInputView.deselectColor = [UIColor lightGrayColor];
+
+    _bottomLineInputView.VerificationCodeNum = 6;
+    _bottomLineInputView.lineStyle = true;
+    _bottomLineInputView.Spacing = 16;//每根线间距属性
+    [self.view addSubview:_bottomLineInputView];
     
     
     PZXCodeInputView *codeInputView = [[PZXCodeInputView alloc] initWithNumberOfFields:4];
@@ -60,12 +73,12 @@
 
 - (IBAction)changeButtonPressed:(UIButton *)sender {
     
-    _pzxView.isSecure = !_pzxView.isSecure;
+    _cellView.isSecure = !_cellView.isSecure;
 }
 
 - (IBAction)outButtonPressed:(UIButton *)sender {
     
-    UIAlertController  *alert = [UIAlertController alertControllerWithTitle:@"验证码" message:[NSString stringWithFormat:@"%@",_pzxView.vertificationCode] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController  *alert = [UIAlertController alertControllerWithTitle:@"验证码" message:[NSString stringWithFormat:@"%@",_cellView.vertificationCode] preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
     }];
@@ -77,10 +90,16 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     
-    for (UITextField *tf in _pzxView.textFieldArray) {
+    for (UITextField *tf in _cellView.textFieldArray) {
         
         [tf resignFirstResponder];
     }
+    for (UITextField *tf in _bottomLineInputView.textFieldArray) {
+        
+        [tf resignFirstResponder];
+    }
+    
+
     //    [self.view endEditing:YES];
     
 }

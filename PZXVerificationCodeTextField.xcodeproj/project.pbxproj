@@ -15,6 +15,8 @@
 		70B85E791DFD059A00D78A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E771DFD059A00D78A94 /* LaunchScreen.storyboard */; };
 		70B85E881DFD500E00D78A94 /* pzxYZM.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E871DFD500E00D78A94 /* pzxYZM.gif */; };
 		891AA9AA2BF5F7410086D440 /* 14761715847088_.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 891AA9A92BF5F7410086D440 /* 14761715847088_.pic.jpg */; };
+		895752A62C6F1E8E003E64FE /* 2024.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 895752A42C6F1E8D003E64FE /* 2024.PNG */; };
+		895752A72C6F1E8E003E64FE /* yxm2024.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 895752A52C6F1E8E003E64FE /* yxm2024.GIF */; };
 		89E3BE9B1E45755700A031A2 /* vDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89E3BE9A1E45755700A031A2 /* vDemo.gif */; };
 		89EC83F42C6EF8230027394C /* PZXCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC83ED2C6EF8220027394C /* PZXCodeInputView.swift */; };
 		89EC83F52C6EF8230027394C /* PZXVerificationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC83F12C6EF8220027394C /* PZXVerificationTextField.m */; };
@@ -35,6 +37,8 @@
 		70B85E871DFD500E00D78A94 /* pzxYZM.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pzxYZM.gif; sourceTree = "<group>"; };
 		891AA9A82BF5F6FD0086D440 /* 1475_1715846966.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1475_1715846966.mp4; sourceTree = "<group>"; };
 		891AA9A92BF5F7410086D440 /* 14761715847088_.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14761715847088_.pic.jpg; sourceTree = "<group>"; };
+		895752A42C6F1E8D003E64FE /* 2024.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2024.PNG; sourceTree = "<group>"; };
+		895752A52C6F1E8E003E64FE /* yxm2024.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yxm2024.GIF; sourceTree = "<group>"; };
 		89E3BE9A1E45755700A031A2 /* vDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vDemo.gif; sourceTree = "<group>"; };
 		89EC83ED2C6EF8220027394C /* PZXCodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZXCodeInputView.swift; sourceTree = "<group>"; };
 		89EC83EF2C6EF8220027394C /* PZXVerificationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationTextField.h; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				70B85E6F1DFD059A00D78A94 /* ViewController.h */,
 				70B85E701DFD059A00D78A94 /* ViewController.m */,
 				70B85E871DFD500E00D78A94 /* pzxYZM.gif */,
+				895752A42C6F1E8D003E64FE /* 2024.PNG */,
+				895752A52C6F1E8E003E64FE /* yxm2024.GIF */,
 				891AA9A82BF5F6FD0086D440 /* 1475_1715846966.mp4 */,
 				891AA9A92BF5F7410086D440 /* 14761715847088_.pic.jpg */,
 				89E3BE9A1E45755700A031A2 /* vDemo.gif */,
@@ -120,10 +126,10 @@
 		89EC83EE2C6EF8220027394C /* PZXVerificationCodeTextField-OC */ = {
 			isa = PBXGroup;
 			children = (
-				89EC83EF2C6EF8220027394C /* PZXVerificationTextField.h */,
-				89EC83F02C6EF8220027394C /* PZXVerificationCodeView.h */,
-				89EC83F12C6EF8220027394C /* PZXVerificationTextField.m */,
 				89EC83F22C6EF8220027394C /* PZXVerificationCodeTextField-Bridging-Header.h */,
+				89EC83EF2C6EF8220027394C /* PZXVerificationTextField.h */,
+				89EC83F12C6EF8220027394C /* PZXVerificationTextField.m */,
+				89EC83F02C6EF8220027394C /* PZXVerificationCodeView.h */,
 				89EC83F32C6EF8220027394C /* PZXVerificationCodeView.m */,
 			);
 			path = "PZXVerificationCodeTextField-OC";
@@ -192,8 +198,10 @@
 			files = (
 				70B85E881DFD500E00D78A94 /* pzxYZM.gif in Resources */,
 				70B85E791DFD059A00D78A94 /* LaunchScreen.storyboard in Resources */,
+				895752A62C6F1E8E003E64FE /* 2024.PNG in Resources */,
 				70B85E761DFD059A00D78A94 /* Assets.xcassets in Resources */,
 				89E3BE9B1E45755700A031A2 /* vDemo.gif in Resources */,
+				895752A72C6F1E8E003E64FE /* yxm2024.GIF in Resources */,
 				891AA9AA2BF5F7410086D440 /* 14761715847088_.pic.jpg in Resources */,
 				70B85E741DFD059A00D78A94 /* Main.storyboard in Resources */,
 			);
@@ -334,10 +342,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KCNSS22SRZ;
 				INFOPLIST_FILE = PZXVerificationCodeTextField/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PZXCodeTextField;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pengzuxin.PZXVerificationCodeTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PZXVerificationCodeTextField/PZXVerificationCodeTextField/PZXVerificationCodeTextField-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PZXVerificationCodeTextField/Sources/PZXVerificationCodeTextField-OC/PZXVerificationCodeTextField-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -350,10 +359,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KCNSS22SRZ;
 				INFOPLIST_FILE = PZXVerificationCodeTextField/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PZXCodeTextField;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pengzuxin.PZXVerificationCodeTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PZXVerificationCodeTextField/PZXVerificationCodeTextField/PZXVerificationCodeTextField-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PZXVerificationCodeTextField/Sources/PZXVerificationCodeTextField-OC/PZXVerificationCodeTextField-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

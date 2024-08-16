@@ -18,6 +18,7 @@
 - (IBAction)outButtonPressed:(UIButton *)sender;
 
 @property(nonatomic,strong)PZXVerificationCodeView *bottomLineInputView;
+@property(nonatomic,strong)PZXCodeInputView *codeInputView;
 
 
 @end
@@ -50,16 +51,16 @@
     [self.view addSubview:_bottomLineInputView];
     
     
-    PZXCodeInputView *codeInputView = [[PZXCodeInputView alloc] initWithNumberOfFields:4];
-    codeInputView.translatesAutoresizingMaskIntoConstraints = NO;
-    codeInputView.delegate = self;
-    [self.view addSubview:codeInputView];
+    _codeInputView = [[PZXCodeInputView alloc] initWithNumberOfFields:4];
+    _codeInputView.translatesAutoresizingMaskIntoConstraints = NO;
+    _codeInputView.delegate = self;
+    [self.view addSubview:_codeInputView];
     
     [NSLayoutConstraint activateConstraints:@[
-        [codeInputView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
-        [codeInputView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
-        [codeInputView.heightAnchor constraintEqualToConstant:50],
-        [codeInputView.widthAnchor constraintEqualToConstant:300]
+        [_codeInputView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
+        [_codeInputView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
+        [_codeInputView.heightAnchor constraintEqualToConstant:50],
+        [_codeInputView.widthAnchor constraintEqualToConstant:300]
     ]];
     
 }
@@ -99,7 +100,7 @@
         [tf resignFirstResponder];
     }
     
-
+    [_codeInputView setResignFirstResponder];
     //    [self.view endEditing:YES];
     
 }

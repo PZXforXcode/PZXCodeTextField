@@ -116,4 +116,8 @@ import UIKit
             }
         }
     }
+    
+    @objc public func setResignFirstResponder() {
+        textField.resignFirstResponder()
+    }
 }

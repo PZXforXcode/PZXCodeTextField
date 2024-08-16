@@ -19,6 +19,7 @@
 		895752A72C6F1E8E003E64FE /* yxm2024.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 895752A52C6F1E8E003E64FE /* yxm2024.GIF */; };
 		895752A92C6F20F2003E64FE /* henxian2024.GIF in Resources */ = {isa = PBXBuildFile; fileRef = 895752A82C6F20F2003E64FE /* henxian2024.GIF */; };
 		895752AB2C6F2118003E64FE /* PICon.png in Resources */ = {isa = PBXBuildFile; fileRef = 895752AA2C6F2118003E64FE /* PICon.png */; };
+		895752CE2C6F3035003E64FE /* gezi2024.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 895752CD2C6F3035003E64FE /* gezi2024.PNG */; };
 		89E3BE9B1E45755700A031A2 /* vDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89E3BE9A1E45755700A031A2 /* vDemo.gif */; };
 		89EC83F42C6EF8230027394C /* PZXCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC83ED2C6EF8220027394C /* PZXCodeInputView.swift */; };
 		89EC83F52C6EF8230027394C /* PZXVerificationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC83F12C6EF8220027394C /* PZXVerificationTextField.m */; };
@@ -43,6 +44,7 @@
 		895752A52C6F1E8E003E64FE /* yxm2024.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yxm2024.GIF; sourceTree = "<group>"; };
 		895752A82C6F20F2003E64FE /* henxian2024.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = henxian2024.GIF; sourceTree = "<group>"; };
 		895752AA2C6F2118003E64FE /* PICon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PICon.png; sourceTree = "<group>"; };
+		895752CD2C6F3035003E64FE /* gezi2024.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gezi2024.PNG; sourceTree = "<group>"; };
 		89E3BE9A1E45755700A031A2 /* vDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vDemo.gif; sourceTree = "<group>"; };
 		89EC83ED2C6EF8220027394C /* PZXCodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZXCodeInputView.swift; sourceTree = "<group>"; };
 		89EC83EF2C6EF8220027394C /* PZXVerificationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationTextField.h; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				895752A52C6F1E8E003E64FE /* yxm2024.GIF */,
 				891AA9A82BF5F6FD0086D440 /* 1475_1715846966.mp4 */,
 				891AA9A92BF5F7410086D440 /* 14761715847088_.pic.jpg */,
+				895752CD2C6F3035003E64FE /* gezi2024.PNG */,
 				89E3BE9A1E45755700A031A2 /* vDemo.gif */,
 				70B85E721DFD059A00D78A94 /* Main.storyboard */,
 				70B85E751DFD059A00D78A94 /* Assets.xcassets */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70B85E881DFD500E00D78A94 /* pzxYZM.gif in Resources */,
+				895752CE2C6F3035003E64FE /* gezi2024.PNG in Resources */,
 				70B85E791DFD059A00D78A94 /* LaunchScreen.storyboard in Resources */,
 				895752A62C6F1E8E003E64FE /* 2024.PNG in Resources */,
 				70B85E761DFD059A00D78A94 /* Assets.xcassets in Resources */,

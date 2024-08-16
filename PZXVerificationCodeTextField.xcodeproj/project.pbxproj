@@ -13,12 +13,12 @@
 		70B85E741DFD059A00D78A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E721DFD059A00D78A94 /* Main.storyboard */; };
 		70B85E761DFD059A00D78A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E751DFD059A00D78A94 /* Assets.xcassets */; };
 		70B85E791DFD059A00D78A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E771DFD059A00D78A94 /* LaunchScreen.storyboard */; };
-		70B85E831DFD060E00D78A94 /* PZXVerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B85E821DFD060E00D78A94 /* PZXVerificationCodeView.m */; };
-		70B85E861DFD2DCB00D78A94 /* PZXVerificationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B85E851DFD2DCB00D78A94 /* PZXVerificationTextField.m */; };
 		70B85E881DFD500E00D78A94 /* pzxYZM.gif in Resources */ = {isa = PBXBuildFile; fileRef = 70B85E871DFD500E00D78A94 /* pzxYZM.gif */; };
-		891AA9A72BF5EBF10086D440 /* PZXCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891AA9A62BF5EBF00086D440 /* PZXCodeInputView.swift */; };
 		891AA9AA2BF5F7410086D440 /* 14761715847088_.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 891AA9A92BF5F7410086D440 /* 14761715847088_.pic.jpg */; };
 		89E3BE9B1E45755700A031A2 /* vDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89E3BE9A1E45755700A031A2 /* vDemo.gif */; };
+		89EC83F42C6EF8230027394C /* PZXCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC83ED2C6EF8220027394C /* PZXCodeInputView.swift */; };
+		89EC83F52C6EF8230027394C /* PZXVerificationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC83F12C6EF8220027394C /* PZXVerificationTextField.m */; };
+		89EC83F62C6EF8230027394C /* PZXVerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EC83F32C6EF8220027394C /* PZXVerificationCodeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +32,16 @@
 		70B85E751DFD059A00D78A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70B85E781DFD059A00D78A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70B85E7A1DFD059A00D78A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70B85E811DFD060E00D78A94 /* PZXVerificationCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationCodeView.h; sourceTree = "<group>"; };
-		70B85E821DFD060E00D78A94 /* PZXVerificationCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationCodeView.m; sourceTree = "<group>"; };
-		70B85E841DFD2DCB00D78A94 /* PZXVerificationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationTextField.h; sourceTree = "<group>"; };
-		70B85E851DFD2DCB00D78A94 /* PZXVerificationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationTextField.m; sourceTree = "<group>"; };
 		70B85E871DFD500E00D78A94 /* pzxYZM.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pzxYZM.gif; sourceTree = "<group>"; };
-		891AA9A52BF5EBEF0086D440 /* PZXVerificationCodeTextField-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PZXVerificationCodeTextField-Bridging-Header.h"; sourceTree = "<group>"; };
-		891AA9A62BF5EBF00086D440 /* PZXCodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZXCodeInputView.swift; sourceTree = "<group>"; };
 		891AA9A82BF5F6FD0086D440 /* 1475_1715846966.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1475_1715846966.mp4; sourceTree = "<group>"; };
 		891AA9A92BF5F7410086D440 /* 14761715847088_.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14761715847088_.pic.jpg; sourceTree = "<group>"; };
 		89E3BE9A1E45755700A031A2 /* vDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vDemo.gif; sourceTree = "<group>"; };
+		89EC83ED2C6EF8220027394C /* PZXCodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PZXCodeInputView.swift; sourceTree = "<group>"; };
+		89EC83EF2C6EF8220027394C /* PZXVerificationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationTextField.h; sourceTree = "<group>"; };
+		89EC83F02C6EF8220027394C /* PZXVerificationCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZXVerificationCodeView.h; sourceTree = "<group>"; };
+		89EC83F12C6EF8220027394C /* PZXVerificationTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationTextField.m; sourceTree = "<group>"; };
+		89EC83F22C6EF8220027394C /* PZXVerificationCodeTextField-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PZXVerificationCodeTextField-Bridging-Header.h"; sourceTree = "<group>"; };
+		89EC83F32C6EF8220027394C /* PZXVerificationCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationCodeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 		70B85E681DFD059A00D78A94 /* PZXVerificationCodeTextField */ = {
 			isa = PBXGroup;
 			children = (
-				70B85E801DFD05DC00D78A94 /* PZXVerificationCodeTextField */,
+				89EC83EB2C6EF8220027394C /* Sources */,
 				70B85E6C1DFD059A00D78A94 /* AppDelegate.h */,
 				70B85E6D1DFD059A00D78A94 /* AppDelegate.m */,
 				70B85E6F1DFD059A00D78A94 /* ViewController.h */,
@@ -100,17 +100,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		70B85E801DFD05DC00D78A94 /* PZXVerificationCodeTextField */ = {
+		89EC83EB2C6EF8220027394C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				891AA9A62BF5EBF00086D440 /* PZXCodeInputView.swift */,
-				70B85E811DFD060E00D78A94 /* PZXVerificationCodeView.h */,
-				70B85E821DFD060E00D78A94 /* PZXVerificationCodeView.m */,
-				70B85E841DFD2DCB00D78A94 /* PZXVerificationTextField.h */,
-				70B85E851DFD2DCB00D78A94 /* PZXVerificationTextField.m */,
-				891AA9A52BF5EBEF0086D440 /* PZXVerificationCodeTextField-Bridging-Header.h */,
+				89EC83EC2C6EF8220027394C /* PZXVerificationCodeTextField-swift */,
+				89EC83EE2C6EF8220027394C /* PZXVerificationCodeTextField-OC */,
 			);
-			path = PZXVerificationCodeTextField;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		89EC83EC2C6EF8220027394C /* PZXVerificationCodeTextField-swift */ = {
+			isa = PBXGroup;
+			children = (
+				89EC83ED2C6EF8220027394C /* PZXCodeInputView.swift */,
+			);
+			path = "PZXVerificationCodeTextField-swift";
+			sourceTree = "<group>";
+		};
+		89EC83EE2C6EF8220027394C /* PZXVerificationCodeTextField-OC */ = {
+			isa = PBXGroup;
+			children = (
+				89EC83EF2C6EF8220027394C /* PZXVerificationTextField.h */,
+				89EC83F02C6EF8220027394C /* PZXVerificationCodeView.h */,
+				89EC83F12C6EF8220027394C /* PZXVerificationTextField.m */,
+				89EC83F22C6EF8220027394C /* PZXVerificationCodeTextField-Bridging-Header.h */,
+				89EC83F32C6EF8220027394C /* PZXVerificationCodeView.m */,
+			);
+			path = "PZXVerificationCodeTextField-OC";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,11 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				70B85E711DFD059A00D78A94 /* ViewController.m in Sources */,
-				70B85E861DFD2DCB00D78A94 /* PZXVerificationTextField.m in Sources */,
+				89EC83F62C6EF8230027394C /* PZXVerificationCodeView.m in Sources */,
+				89EC83F52C6EF8230027394C /* PZXVerificationTextField.m in Sources */,
+				89EC83F42C6EF8230027394C /* PZXCodeInputView.swift in Sources */,
 				70B85E6E1DFD059A00D78A94 /* AppDelegate.m in Sources */,
-				891AA9A72BF5EBF10086D440 /* PZXCodeInputView.swift in Sources */,
 				70B85E6B1DFD059A00D78A94 /* main.m in Sources */,
-				70B85E831DFD060E00D78A94 /* PZXVerificationCodeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

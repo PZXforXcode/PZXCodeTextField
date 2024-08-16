@@ -12,6 +12,7 @@ Chinese:
 ## Overview / 概述
 - [x] Objective-C compatibility
 - [x] Swift 5 Support
+- [x] Supports CocoaPods
 - [x] Supports Custom Styling
 - [x] Supports Horizontal Line Input Style
 - [x] Quick Setup
@@ -36,7 +37,7 @@ Chinese:
 ## Install / 安装
 ### Manually / 手动
 ----------------
-1. Download and drop ```/PZXVerificationCodeTextField``` folder in your project.  
+1. Download and drop ```/Sources``` folder in your project.  
 2. Congratulations!
 ### CocoaPods
 ##### pod 文件新增

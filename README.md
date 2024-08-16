@@ -1,10 +1,10 @@
 # PZXCodeTextField
 
 <p align="center">
-  <img src="https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/PICon.png" alt="PZXCodeTextField Logo" width="200">
+  <img src="https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/PICon.png" alt="PZXCodeTextField Logo" width="400">
 </p>
 
-<h2 align="center">PZXCodeTextField</h2>
+<h1 align="center">PZXCodeTextField</h1>
 
 ## intro / 简介
 EN:  

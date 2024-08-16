@@ -62,13 +62,14 @@ end
 ## Usage: / 使用:
 Objective-C
 ```Objective-C
-    _pzxView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
-    _pzxView.selectedColor = [UIColor blackColor];
-//    _pzxView.deselectColor = [UIColor cyanColor];
-    _pzxView.VerificationCodeNum = 4;
-//    _pzxView.isSecure = YES;
-      _pzxView.Spacing = 0;//每个格子间距属性// Spacing between each box
-   [self.view addSubview:_pzxView];
+    _cellView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 60)];
+    _cellView.selectedColor = [UIColor blackColor];
+    //    _pzxView.center = self.view.center;
+    //    _pzxView.deselectColor = [UIColor cyanColor];
+    _cellView.VerificationCodeNum = 6;
+    //    _pzxView.isSecure = YES;//密文
+    _cellView.Spacing = 0;//每个格子间距属性
+    [self.view addSubview:_cellView];
 ```
 Swift
 ```Swift

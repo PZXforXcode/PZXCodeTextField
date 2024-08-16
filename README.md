@@ -21,14 +21,18 @@ Chinese:
 
 
 ## New Features / 新增效果
-## New Features / 新增效果
 
-| 横线输入框1 | 动效1 | 横线输入框2 | 动效2 |
-| --- | --- | --- | --- |
-| **格子输入框** <br> <img src="YOUR_IMAGE_URL_FOR_INPUT_FIELD_2" width="190" height="400"> | **动效1** <br> <img src="https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip" width="190" height="400"> | | **横线输入框** <br> <img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="190" height="400"> | **动效2** <br> <img src="https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/henxian2024.GIF?imageMogr2/auto-orient/strip" width="190" height="400"> | **下横线输入框** <br> <img src="[下横线输入框](https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/2024.PNG)" width="190" height="400"> | **动效3** <br> <img src="[动效3](https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/yxm2024.GIF)" width="190" height="400"> 
+| 格子输入框 | 动效 | 
+| --- | --- |
+| <br> <img src="YOUR_IMAGE_URL_FOR_INPUT_FIELD_2" width="190" height="400"> |  <br> <img src="https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip" width="190" height="400"> | <br> <img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="190" height="400"> | <br> <img src="https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/henxian2024.GIF?imageMogr2/auto-orient/strip" width="190" height="400"> 
 
+| 横线输入框 | 动效 | 
+| --- | --- |
+| <br> <img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="190" height="400"> | <br> <img src="https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/henxian2024.GIF?imageMogr2/auto-orient/strip" width="190" height="400"> |
 
-
+| 下划线输入框 | 动效 | 
+| --- | --- |
+| <br> <img src="[下横线输入框](https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/2024.PNG)" width="190" height="400"> |<br> <img src="[动效3](https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/yxm2024.GIF)" width="190" height="400"> 
 
 
 ## Requirements / 支持

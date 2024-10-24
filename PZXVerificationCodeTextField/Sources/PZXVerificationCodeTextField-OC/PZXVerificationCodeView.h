@@ -16,7 +16,7 @@
 
 @property(nonatomic,assign)CGFloat Spacing;//每个格子间距
 
-@property(nonatomic,assign)CGFloat boderWidth;//格子的border值
+@property(nonatomic,assign)CGFloat borderWidth;//格子的border值
 
 
 @property(nonatomic,assign)BOOL lineStyle;//横线样式

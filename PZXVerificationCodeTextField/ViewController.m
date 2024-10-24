@@ -44,9 +44,10 @@
     [self.view addSubview:_cellView];
     
     _SpacingView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 60)];
-    _SpacingView.selectedColor = [UIColor blackColor];
-    //    _pzxView.center = self.view.center;
-    //    _pzxView.deselectColor = [UIColor cyanColor];
+    _SpacingView.selectedColor = [UIColor blueColor];
+    _SpacingView.deselectColor = [UIColor grayColor];
+
+    _SpacingView.borderWidth = 2;
     _SpacingView.VerificationCodeNum = 6;
     //    _pzxView.isSecure = YES;//密文
     _SpacingView.Spacing = 6;//每个格子间距属性

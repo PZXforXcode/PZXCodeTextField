@@ -26,7 +26,7 @@
         self.lineStyle = false; //默认是格子样式
         self.selectedColor = [UIColor cyanColor];
         self.deselectColor = [UIColor redColor];   //默认边框颜色
-        self.boderWidth = 1;
+        self.borderWidth = 1;
         [self setView]; //绘制界面
         
         
@@ -54,8 +54,7 @@
     
     //间距=0的话前移一点，保证border 不变粗
     if  (_Spacing == 0) {
-//        _Spacing = - (_boderWidth * 1.5);
-        _Spacing = - (_boderWidth);
+        _Spacing = - (_borderWidth);
 
     }
     
@@ -83,7 +82,7 @@
             [self addSubview:line];
         } else {
             tf.layer.borderColor = self.deselectColor.CGColor;
-            tf.layer.borderWidth = _boderWidth;
+            tf.layer.borderWidth = _borderWidth;
         }
         
         [self addSubview:tf];

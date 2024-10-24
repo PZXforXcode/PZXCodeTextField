@@ -13,6 +13,9 @@
 @interface ViewController () <PZXCodeInputViewDelegate>
 
 @property(nonatomic,strong)PZXVerificationCodeView *cellView;
+
+@property(nonatomic,strong)PZXVerificationCodeView *SpacingView;
+
 @property(nonatomic,strong)UITextField *TF;
 - (IBAction)changeButtonPressed:(UIButton *)sender;
 - (IBAction)outButtonPressed:(UIButton *)sender;
@@ -39,6 +42,15 @@
     //    _pzxView.isSecure = YES;//密文
     _cellView.Spacing = 0;//每个格子间距属性
     [self.view addSubview:_cellView];
+    
+    _SpacingView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 60)];
+    _SpacingView.selectedColor = [UIColor blackColor];
+    //    _pzxView.center = self.view.center;
+    //    _pzxView.deselectColor = [UIColor cyanColor];
+    _SpacingView.VerificationCodeNum = 6;
+    //    _pzxView.isSecure = YES;//密文
+    _SpacingView.Spacing = 6;//每个格子间距属性
+    [self.view addSubview:_SpacingView];
     
     
     _bottomLineInputView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(16, 300, self.view.frame.size.width - 32, 60)];

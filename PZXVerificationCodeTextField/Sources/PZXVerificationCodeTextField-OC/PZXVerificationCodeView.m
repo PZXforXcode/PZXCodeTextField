@@ -26,7 +26,7 @@
         self.lineStyle = false; //默认是格子样式
         self.selectedColor = [UIColor cyanColor];
         self.deselectColor = [UIColor redColor];   //默认边框颜色
-
+        self.boderWidth = 1;
         [self setView]; //绘制界面
         
         
@@ -41,7 +41,7 @@
         
         tf.secureTextEntry = _isSecure;
     }
-
+    
 }
 
 -(void)setView {
@@ -50,6 +50,13 @@
     // Remove any existing subviews (text fields and lines)
     for (UIView *view in [self subviews]) {
         [view removeFromSuperview];
+    }
+    
+    //间距=0的话前移一点，保证border 不变粗
+    if  (_Spacing == 0) {
+//        _Spacing = - (_boderWidth * 1.5);
+        _Spacing = - (_boderWidth);
+
     }
     
     CGFloat textFieldWidth = self.frame.size.width / self.VerificationCodeNum - _Spacing;
@@ -76,7 +83,7 @@
             [self addSubview:line];
         } else {
             tf.layer.borderColor = self.deselectColor.CGColor;
-            tf.layer.borderWidth = 0.5;
+            tf.layer.borderWidth = _boderWidth;
         }
         
         [self addSubview:tf];
@@ -96,7 +103,7 @@
         newTF.text = @"";
         [newTF becomeFirstResponder];
     }
-
+    
     
 }
 
@@ -104,7 +111,7 @@
 
 //代理（里面有自己的密码线）
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-
+    
     // 处理粘贴多个字符的情况
     if (string.length > 1) {
         NSMutableArray *textFields = [NSMutableArray arrayWithArray:self.textFieldArray];
@@ -142,8 +149,9 @@
 
 //在里面改变选中状态以及获取验证码
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
-
+    
     textField.layer.borderColor = self.selectedColor.CGColor;
+    [self bringSubviewToFront:textField];
     UIView *line =  (UIView *)[self viewWithTag:textField.tag + 900];
     line.backgroundColor = self.selectedColor;
     [self getVertificationCode];
@@ -154,12 +162,12 @@
     textField.layer.borderColor = self.deselectColor.CGColor;
     UIView *line =  (UIView *)[self viewWithTag:textField.tag + 900];
     line.backgroundColor = self.deselectColor;
-
+    
     [self getVertificationCode];
 }
 
 -(void)getVertificationCode{ //获取验证码方法
-
+    
     NSString *str = [NSString string];
     
     for (int i = 0; i<_textFieldArray.count; i++) {
@@ -177,7 +185,7 @@
     
 }
 -(void)setSpacing:(CGFloat)Spacing{
-
+    
     _Spacing = Spacing;
     [self setView];
 }
@@ -193,18 +201,18 @@
     
     _isSecure = isSecure;
     [self setSecure];
-
+    
 }
 
 -(void)setDeselectColor:(UIColor *)deselectColor{
-
+    
     _deselectColor = deselectColor;
     
 }
 -(void)setSelectedColor:(UIColor *)selectedColor{
     
     _selectedColor = selectedColor;
-
+    
 }
 
 //点击回收键盘
@@ -214,7 +222,7 @@
         
         [tf resignFirstResponder];
     }
-
-
+    
+    
 }
 @end

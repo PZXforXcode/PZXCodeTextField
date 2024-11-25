@@ -24,7 +24,7 @@ Chinese:
 
 
 ## New Features / 新增效果
-
+![样式总览](https://github.com/user-attachments/assets/cde9e984-09f0-4784-996a-7d13ff3209b5)
 | 格子输入框 | 动效 | 
 | --- | --- |
 | <br> <img src="https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/gezi2024.PNG" width="190" height="400"> |  <br> <img src="https://upload-images.jianshu.io/upload_images/19409325-abc359691897365c.gif?imageMogr2/auto-orient/strip" width="190" height="400"> | <br> <img src="https://github.com/PZXforXcode/PZXVerificationCodeTextField/blob/master/PZXVerificationCodeTextField/14761715847088_.pic.jpg" width="190" height="400"> | <br> <img src="https://github.com/PZXforXcode/PZXCodeTextField/blob/master/PZXVerificationCodeTextField/henxian2024.GIF?imageMogr2/auto-orient/strip" width="190" height="400"> 

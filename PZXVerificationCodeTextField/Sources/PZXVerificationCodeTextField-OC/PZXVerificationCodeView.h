@@ -18,6 +18,8 @@
 
 @property(nonatomic,assign)CGFloat borderWidth;//格子的border值
 
+@property(nonatomic,assign)CGFloat cornerRadius;//圆角
+
 
 @property(nonatomic,assign)BOOL lineStyle;//横线样式
 
@@ -26,6 +28,9 @@
 @property (nonatomic, strong)UIColor *deselectColor;//未选中颜色
 
 @property (nonatomic, strong)UIColor *selectedColor;//选中颜色
+
+@property (nonatomic, strong)UIColor *textFieldBackgroundColor;//格子背景颜色
+
 
 @property (nonatomic, strong)NSMutableArray *textFieldArray;//放textField的array用于在外面好取消键盘
 

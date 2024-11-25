@@ -24,9 +24,11 @@
         self.VerificationCodeNum = 4;//默认4位
         self.Spacing = 0;//默认间距为0
         self.lineStyle = false; //默认是格子样式
+        self.textFieldBackgroundColor = [UIColor clearColor];
         self.selectedColor = [UIColor cyanColor];
         self.deselectColor = [UIColor redColor];   //默认边框颜色
         self.borderWidth = 1;
+        self.cornerRadius = 0;
         [self setView]; //绘制界面
         
         
@@ -63,7 +65,8 @@
     for (int i = 0; i < self.VerificationCodeNum; i++) {
         // Create the text field
         PZXVerificationTextField *tf = [[PZXVerificationTextField alloc] initWithFrame:CGRectMake(i * (self.frame.size.width / self.VerificationCodeNum) + _Spacing / 2, 0, textFieldWidth, self.frame.size.height)];
-        tf.backgroundColor = [UIColor clearColor];
+        tf.backgroundColor = self.textFieldBackgroundColor;
+        tf.layer.cornerRadius = self.cornerRadius;
         tf.pzx_delegate = self;
         tf.keyboardType = UIKeyboardTypeNumberPad;
         tf.textColor = [UIColor blackColor];

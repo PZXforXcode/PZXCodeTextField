@@ -16,6 +16,9 @@
 
 @property(nonatomic,strong)PZXVerificationCodeView *SpacingView;
 
+@property(nonatomic,strong)PZXVerificationCodeView *grayView;
+
+
 @property(nonatomic,strong)UITextField *TF;
 - (IBAction)changeButtonPressed:(UIButton *)sender;
 - (IBAction)outButtonPressed:(UIButton *)sender;
@@ -54,7 +57,19 @@
     [self.view addSubview:_SpacingView];
     
     
-    _bottomLineInputView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(16, 300, self.view.frame.size.width - 32, 60)];
+    _grayView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 60)];
+    _grayView.selectedColor = [UIColor clearColor];
+    _grayView.deselectColor = [UIColor clearColor];
+    _grayView.textFieldBackgroundColor = [UIColor groupTableViewBackgroundColor];
+    _grayView.borderWidth = 0;
+    _grayView.cornerRadius = 6;
+    _grayView.VerificationCodeNum = 6;
+    //    _pzxView.isSecure = YES;//密文
+    _grayView.Spacing = 6;//每个格子间距属性
+    [self.view addSubview:_grayView];
+    
+    
+    _bottomLineInputView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(16, 400, self.view.frame.size.width - 32, 60)];
     _bottomLineInputView.selectedColor = [UIColor blackColor];
     _bottomLineInputView.deselectColor = [UIColor lightGrayColor];
 
@@ -71,10 +86,11 @@
     
     [NSLayoutConstraint activateConstraints:@[
         [_codeInputView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
-        [_codeInputView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
+        [_codeInputView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:500],
         [_codeInputView.heightAnchor constraintEqualToConstant:50],
         [_codeInputView.widthAnchor constraintEqualToConstant:300]
     ]];
+
     
 }
 

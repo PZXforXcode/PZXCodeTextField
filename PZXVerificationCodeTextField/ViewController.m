@@ -49,7 +49,8 @@
     _SpacingView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 60)];
     _SpacingView.selectedColor = [UIColor blueColor];
     _SpacingView.deselectColor = [UIColor grayColor];
-
+    //隐藏键盘游标
+    _SpacingView.isCursorHidden = true;
     _SpacingView.borderWidth = 2;
     _SpacingView.VerificationCodeNum = 6;
     //    _pzxView.isSecure = YES;//密文

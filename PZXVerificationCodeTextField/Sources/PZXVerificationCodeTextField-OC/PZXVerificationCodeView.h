@@ -14,6 +14,9 @@
 
 @property(nonatomic,assign)BOOL isSecure;//是否密文显示
 
+@property(nonatomic,assign)BOOL isCursorHidden;//是否隐藏键盘游标
+
+
 @property(nonatomic,assign)CGFloat Spacing;//每个格子间距
 
 @property(nonatomic,assign)CGFloat borderWidth;//格子的border值

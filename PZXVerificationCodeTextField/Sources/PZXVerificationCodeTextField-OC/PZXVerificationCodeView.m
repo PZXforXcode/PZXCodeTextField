@@ -29,6 +29,7 @@
         self.deselectColor = [UIColor redColor];   //默认边框颜色
         self.borderWidth = 1;
         self.cornerRadius = 0;
+        self.isCursorHidden = false;
         [self setView]; //绘制界面
         
         
@@ -70,7 +71,12 @@
         tf.pzx_delegate = self;
         tf.keyboardType = UIKeyboardTypeNumberPad;
         tf.textColor = [UIColor blackColor];
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 300)];
+        view.backgroundColor = [UIColor redColor];
         tf.inputView = nil;
+        if (_isCursorHidden == true)  {
+            tf.tintColor = [UIColor clearColor];
+        }
         tf.delegate = self;
         tf.tag = 100 + i;
         tf.textAlignment = NSTextAlignmentCenter;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "PZXCodeTextField"
-  spec.version      = "0.0.8"
+  spec.version      = "1.0.0"
   spec.summary      = "A Swift library for customizable code text fields."
   spec.description  = <<-DESC
                        PZXCodeTextField is a Swift library that provides a customizable code text field, useful for verification codes and other scenarios requiring user input.

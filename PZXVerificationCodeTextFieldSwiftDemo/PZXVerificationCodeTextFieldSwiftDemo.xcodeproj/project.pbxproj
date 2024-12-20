@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8905E2B72D155DDC00314616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8905E2AE2D155DDC00314616 /* Assets.xcassets */; };
+		8905E2B92D155DDC00314616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8905E2B12D155DDC00314616 /* LaunchScreen.storyboard */; };
+		8905E2BA2D155DDC00314616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8905E2B32D155DDC00314616 /* Main.storyboard */; };
+		8905E2BB2D155DDC00314616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905E2AD2D155DDC00314616 /* AppDelegate.swift */; };
+		8905E2BC2D155DDC00314616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905E2B42D155DDC00314616 /* SceneDelegate.swift */; };
+		8905E2BD2D155DDC00314616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905E2B52D155DDC00314616 /* ViewController.swift */; };
+		8905E2D82D155E8600314616 /* PZXVerificationTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905E2D32D155E8600314616 /* PZXVerificationTextField.m */; };
+		8905E2D92D155E8600314616 /* PZXCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905E2D52D155E8600314616 /* PZXCodeInputView.swift */; };
+		8905E2DA2D155E8600314616 /* PZXVerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8905E2D12D155E8600314616 /* PZXVerificationCodeView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8905E27D2D155D2200314616 /* PZXVerificationCodeTextFieldSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PZXVerificationCodeTextFieldSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8905E2AD2D155DDC00314616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8905E2AE2D155DDC00314616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8905E2AF2D155DDC00314616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8905E2B02D155DDC00314616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8905E2B22D155DDC00314616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8905E2B42D155DDC00314616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8905E2B52D155DDC00314616 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8905E2CC2D155E7600314616 /* PZXVerificationCodeTextFieldSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PZXVerificationCodeTextFieldSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8905E2CF2D155E8600314616 /* PZXVerificationCodeTextField-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PZXVerificationCodeTextField-Bridging-Header.h"; sourceTree = "<group>"; };
+		8905E2D02D155E8600314616 /* PZXVerificationCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZXVerificationCodeView.h; sourceTree = "<group>"; };
+		8905E2D12D155E8600314616 /* PZXVerificationCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationCodeView.m; sourceTree = "<group>"; };
+		8905E2D22D155E8600314616 /* PZXVerificationTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZXVerificationTextField.h; sourceTree = "<group>"; };
+		8905E2D32D155E8600314616 /* PZXVerificationTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZXVerificationTextField.m; sourceTree = "<group>"; };
+		8905E2D52D155E8600314616 /* PZXCodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZXCodeInputView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8905E27A2D155D2200314616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8905E2742D155D2200314616 = {
+			isa = PBXGroup;
+			children = (
+				8905E2B62D155DDC00314616 /* PZXVerificationCodeTextFieldSwiftDemo */,
+				8905E27E2D155D2200314616 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8905E27E2D155D2200314616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8905E27D2D155D2200314616 /* PZXVerificationCodeTextFieldSwiftDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8905E2B62D155DDC00314616 /* PZXVerificationCodeTextFieldSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8905E2D72D155E8600314616 /* Sources */,
+				8905E2AD2D155DDC00314616 /* AppDelegate.swift */,
+				8905E2AE2D155DDC00314616 /* Assets.xcassets */,
+				8905E2AF2D155DDC00314616 /* Info.plist */,
+				8905E2B12D155DDC00314616 /* LaunchScreen.storyboard */,
+				8905E2B32D155DDC00314616 /* Main.storyboard */,
+				8905E2B42D155DDC00314616 /* SceneDelegate.swift */,
+				8905E2B52D155DDC00314616 /* ViewController.swift */,
+				8905E2CC2D155E7600314616 /* PZXVerificationCodeTextFieldSwiftDemo-Bridging-Header.h */,
+			);
+			path = PZXVerificationCodeTextFieldSwiftDemo;
+			sourceTree = "<group>";
+		};
+		8905E2D42D155E8600314616 /* PZXVerificationCodeTextField-OC */ = {
+			isa = PBXGroup;
+			children = (
+				8905E2CF2D155E8600314616 /* PZXVerificationCodeTextField-Bridging-Header.h */,
+				8905E2D02D155E8600314616 /* PZXVerificationCodeView.h */,
+				8905E2D12D155E8600314616 /* PZXVerificationCodeView.m */,
+				8905E2D22D155E8600314616 /* PZXVerificationTextField.h */,
+				8905E2D32D155E8600314616 /* PZXVerificationTextField.m */,
+			);
+			path = "PZXVerificationCodeTextField-OC";
+			sourceTree = "<group>";
+		};
+		8905E2D62D155E8600314616 /* PZXVerificationCodeTextField-swift */ = {
+			isa = PBXGroup;
+			children = (
+				8905E2D52D155E8600314616 /* PZXCodeInputView.swift */,
+			);
+			path = "PZXVerificationCodeTextField-swift";
+			sourceTree = "<group>";
+		};
+		8905E2D72D155E8600314616 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8905E2D42D155E8600314616 /* PZXVerificationCodeTextField-OC */,
+				8905E2D62D155E8600314616 /* PZXVerificationCodeTextField-swift */,
+			);
+			name = Sources;
+			path = ../PZXVerificationCodeTextField/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8905E27C2D155D2200314616 /* PZXVerificationCodeTextFieldSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8905E2902D155D2500314616 /* Build configuration list for PBXNativeTarget "PZXVerificationCodeTextFieldSwiftDemo" */;
+			buildPhases = (
+				8905E2792D155D2200314616 /* Sources */,
+				8905E27A2D155D2200314616 /* Frameworks */,
+				8905E27B2D155D2200314616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PZXVerificationCodeTextFieldSwiftDemo;
+			packageProductDependencies = (
+			);
+			productName = PZXVerificationCodeTextFieldSwiftDemo;
+			productReference = 8905E27D2D155D2200314616 /* PZXVerificationCodeTextFieldSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8905E2752D155D2200314616 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					8905E27C2D155D2200314616 = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
+					};
+				};
+			};
+			buildConfigurationList = 8905E2782D155D2200314616 /* Build configuration list for PBXProject "PZXVerificationCodeTextFieldSwiftDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8905E2742D155D2200314616;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8905E27E2D155D2200314616 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8905E27C2D155D2200314616 /* PZXVerificationCodeTextFieldSwiftDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8905E27B2D155D2200314616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8905E2B72D155DDC00314616 /* Assets.xcassets in Resources */,
+				8905E2B92D155DDC00314616 /* LaunchScreen.storyboard in Resources */,
+				8905E2BA2D155DDC00314616 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8905E2792D155D2200314616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8905E2BB2D155DDC00314616 /* AppDelegate.swift in Sources */,
+				8905E2BC2D155DDC00314616 /* SceneDelegate.swift in Sources */,
+				8905E2BD2D155DDC00314616 /* ViewController.swift in Sources */,
+				8905E2D82D155E8600314616 /* PZXVerificationTextField.m in Sources */,
+				8905E2D92D155E8600314616 /* PZXCodeInputView.swift in Sources */,
+				8905E2DA2D155E8600314616 /* PZXVerificationCodeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8905E2B12D155DDC00314616 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8905E2B02D155DDC00314616 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8905E2B32D155DDC00314616 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8905E2B22D155DDC00314616 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8905E2912D155D2500314616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KCNSS22SRZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PZXVerificationCodeTextFieldSwiftDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pzx.PZXVerificationCodeTextFieldSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PZXVerificationCodeTextFieldSwiftDemo/PZXVerificationCodeTextFieldSwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8905E2922D155D2500314616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KCNSS22SRZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PZXVerificationCodeTextFieldSwiftDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pzx.PZXVerificationCodeTextFieldSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PZXVerificationCodeTextFieldSwiftDemo/PZXVerificationCodeTextFieldSwiftDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8905E2932D155D2500314616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8905E2942D155D2500314616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8905E2782D155D2200314616 /* Build configuration list for PBXProject "PZXVerificationCodeTextFieldSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8905E2932D155D2500314616 /* Debug */,
+				8905E2942D155D2500314616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8905E2902D155D2500314616 /* Build configuration list for PBXNativeTarget "PZXVerificationCodeTextFieldSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8905E2912D155D2500314616 /* Debug */,
+				8905E2922D155D2500314616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8905E2752D155D2200314616 /* Project object */;
+}

@@ -82,6 +82,7 @@
     
     _codeInputView = [[PZXCodeInputView alloc] initWithNumberOfFields:4];
     _codeInputView.translatesAutoresizingMaskIntoConstraints = NO;
+    _codeInputView.style = PZXCodeInputViewStyleDash;
     _codeInputView.delegate = self;
     [self.view addSubview:_codeInputView];
     

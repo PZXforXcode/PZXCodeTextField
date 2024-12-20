@@ -1,20 +1,10 @@
-//
-//  File.swift
-//  PZXCodeInputView
-//
-//  Created by 彭祖鑫 on 2024/5/16.
-//
-
 import UIKit
 
 @objc public protocol PZXCodeInputViewDelegate: AnyObject {
     func codeInputViewDidFinishInput(_ inputView: PZXCodeInputView, code: String)
 }
 
-
-import UIKit
-
-@objc public class PZXCodeInputView: UIView, UITextFieldDelegate {
+@objc public class PZXCodeInputView: UIView {
     
     private var labels: [UILabel] = []
     private let textField = UITextField()
@@ -24,7 +14,7 @@ import UIKit
     
     @objc weak var delegate: PZXCodeInputViewDelegate?
     
-@objc public init(numberOfFields: Int = 6) {
+    @objc public init(numberOfFields: Int = 6) {
         self.numberOfFields = numberOfFields
         super.init(frame: .zero)
         setupView()
@@ -51,7 +41,7 @@ import UIKit
         
         textField.keyboardType = .numberPad
         textField.isHidden = true
-        textField.delegate = self
+        textField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         addSubview(textField)
         
         setupConstraints()
@@ -79,7 +69,7 @@ import UIKit
         
         for label in labels {
             NSLayoutConstraint.activate([
-                label.widthAnchor.constraint(equalToConstant: 30), // 固定宽度
+                label.widthAnchor.constraint(equalToConstant: 30),
                 label.heightAnchor.constraint(equalToConstant: 40)
             ])
         }
@@ -89,24 +79,10 @@ import UIKit
         textField.becomeFirstResponder()
     }
     
-    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let currentText = textField.text else { return false }
-        let newLength = currentText.count + string.count - range.length
-        if newLength <= numberOfFields {
-            textField.text = (currentText as NSString).replacingCharacters(in: range, with: string)
-            updateLabels()
-            
-            if newLength == numberOfFields {
-                delegate?.codeInputViewDidFinishInput(self, code: textField.text ?? "")
-            }
-            
-            return false
-        }
-        return false
-    }
-    
-    private func updateLabels() {
+    @objc private func textFieldChanged() {
         guard let text = textField.text else { return }
+        
+        // 更新 Label 内容
         for i in 0..<numberOfFields {
             if i < text.count {
                 let index = text.index(text.startIndex, offsetBy: i)
@@ -114,6 +90,11 @@ import UIKit
             } else {
                 labels[i].text = dashCharacter
             }
+        }
+        
+        // 检查输入是否完成
+        if text.count == numberOfFields {
+            delegate?.codeInputViewDidFinishInput(self, code: text)
         }
     }
     

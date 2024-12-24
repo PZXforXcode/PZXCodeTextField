@@ -163,6 +163,21 @@
     UIView *line =  (UIView *)[self viewWithTag:textField.tag + 900];
     line.backgroundColor = self.selectedColor;
     [self getVertificationCode];
+    [self moveCaretToEnd:textField];
+
+}
+
+- (void)textFieldDidChangeSelection:(UITextField *)textField {
+    [self moveCaretToEnd:textField];
+}
+
+
+- (void)moveCaretToEnd:(UITextField *)textField {
+    NSString *currentText = textField.text;
+    if (currentText.length > 0) {
+        UITextPosition *endPosition = [textField positionFromPosition:textField.beginningOfDocument offset:currentText.length];
+        textField.selectedTextRange = [textField textRangeFromPosition:endPosition toPosition:endPosition];
+    }
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{

@@ -30,6 +30,7 @@
         self.borderWidth = 1;
         self.cornerRadius = 0;
         self.isCursorHidden = false;
+        self.pzx_keyboardType = UIKeyboardTypeNumberPad;
         [self setView]; //绘制界面
         
         
@@ -69,7 +70,7 @@
         tf.backgroundColor = self.textFieldBackgroundColor;
         tf.layer.cornerRadius = self.cornerRadius;
         tf.pzx_delegate = self;
-        tf.keyboardType = UIKeyboardTypeNumberPad;
+        tf.keyboardType = self.pzx_keyboardType;
         tf.textColor = [UIColor blackColor];
         UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 300)];
         view.backgroundColor = [UIColor redColor];
@@ -235,6 +236,12 @@
 -(void)setSelectedColor:(UIColor *)selectedColor{
     
     _selectedColor = selectedColor;
+    
+}
+-(void)setPzx_keyboardType:(UIKeyboardType)pzx_keyboardType {
+    _pzx_keyboardType = pzx_keyboardType;
+    [self setView];
+
     
 }
 -(void)pzx_becomeFirstResponder:(NSInteger)index{

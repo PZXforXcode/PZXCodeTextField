@@ -37,6 +37,8 @@
 
 @property (nonatomic, strong)NSMutableArray *textFieldArray;//放textField的array用于在外面好取消键盘
 
+@property (nonatomic, assign)UIKeyboardType pzx_keyboardType;//键盘类型
+
 -(void)pzx_becomeFirstResponder:(NSInteger)index;
 
 

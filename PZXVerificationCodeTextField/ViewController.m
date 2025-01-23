@@ -55,6 +55,7 @@
     _SpacingView.VerificationCodeNum = 6;
     //    _pzxView.isSecure = YES;//密文
     _SpacingView.Spacing = 6;//每个格子间距属性
+    _SpacingView.pzx_keyboardType = UIKeyboardTypeDecimalPad;
     [self.view addSubview:_SpacingView];
     
     

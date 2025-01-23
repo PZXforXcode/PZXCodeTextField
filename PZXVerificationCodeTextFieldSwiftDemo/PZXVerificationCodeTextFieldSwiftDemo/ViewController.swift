@@ -27,6 +27,7 @@ class ViewController: UIViewController, PZXCodeInputViewDelegate {
         spacingView.borderWidth = 2
         spacingView.verificationCodeNum = 6
         spacingView.spacing = 6
+        spacingView.pzx_keyboardType = .decimalPad;
         view.addSubview(spacingView)
 
         // Initialize grayView

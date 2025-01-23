@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,22 +20,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1l-XF-97S">
-                                <rect key="frame" x="153" y="632" width="108" height="30"/>
+                                <rect key="frame" x="154.5" y="632" width="105" height="30"/>
                                 <state key="normal" title="输出此时验证码"/>
                                 <connections>
                                     <action selector="outButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icw-sU-sW7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEK-C8-JMo">
-                                <rect key="frame" x="20" y="48" width="92" height="30"/>
+                                <rect key="frame" x="20" y="48" width="90" height="30"/>
                                 <state key="normal" title="切换明文密文"/>
                                 <connections>
                                     <action selector="changeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Roz-f0-sfC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6c-m7-yNa">
+                                <rect key="frame" x="260" y="48" width="134" height="30"/>
+                                <state key="normal" title="选中灰色格子第一个"/>
+                                <connections>
+                                    <action selector="SelectGrayViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5BX-fc-EqX"/>
+                                    <action selector="changeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BUU-ec-UrW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="G6c-m7-yNa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6st-5A-dUF"/>
+                            <constraint firstItem="G6c-m7-yNa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PhV-z6-EBb"/>
                             <constraint firstItem="GEK-C8-JMo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="asP-fO-GtX"/>
                             <constraint firstItem="GEK-C8-JMo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dPO-sF-mNC"/>
                             <constraint firstItem="y1l-XF-97S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sd7-HB-xti"/>

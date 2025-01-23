@@ -237,7 +237,13 @@
     _selectedColor = selectedColor;
     
 }
-
+-(void)pzx_becomeFirstResponder:(NSInteger)index{
+    //防止越界闪退  
+    if (index < self.textFieldArray.count) {
+        UITextField *tf = self.textFieldArray[index];
+        [tf becomeFirstResponder];
+    }
+}   
 //点击回收键盘
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     

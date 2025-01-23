@@ -62,6 +62,8 @@ class ViewController: UIViewController, PZXCodeInputViewDelegate {
             codeInputView.heightAnchor.constraint(equalToConstant: 50),
             codeInputView.widthAnchor.constraint(equalToConstant: 300)
         ])
+        
+        grayView.pzx_becomeFirstResponder(1)
     }
 
     @objc func changeButtonPressed(_ sender: UIButton) {

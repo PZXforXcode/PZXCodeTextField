@@ -102,6 +102,11 @@
     
 }
 
+- (IBAction)SelectGrayViewButtonPressed:(UIButton *)sender {
+    
+    [_grayView pzx_becomeFirstResponder:1];
+    
+}
 
 - (IBAction)changeButtonPressed:(UIButton *)sender {
     

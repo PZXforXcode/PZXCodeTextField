@@ -12,6 +12,8 @@
 #pragma mark - 私有属性
 
 @property (nonatomic, strong,readwrite) NSString *vertificationCode;//验证码内容
+@property (nonatomic, assign) BOOL didNotifyCompletion;
+@property (nonatomic, strong) NSString *lastNotifiedCode;
 @end
 
 @implementation PZXVerificationCodeView
@@ -35,6 +37,8 @@
         
         
         NSLog(@"%ld",self.VerificationCodeNum);
+        _didNotifyCompletion = NO;
+        _lastNotifiedCode = nil;
     }
     return self;
 }
@@ -113,7 +117,7 @@
         [newTF becomeFirstResponder];
     }
     
-    
+    [self getVertificationCode];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -199,6 +203,18 @@
     }
     _vertificationCode = str;
     
+    if (_vertificationCode.length == self.VerificationCodeNum) {
+        if (!self.didNotifyCompletion || ![self.lastNotifiedCode isEqualToString:_vertificationCode]) {
+            if ([self.delegate respondsToSelector:@selector(codeInputViewDidFinishInput:)]) {
+                [self.delegate codeInputViewDidFinishInput:_vertificationCode];
+            }
+            self.didNotifyCompletion = YES;
+            self.lastNotifiedCode = _vertificationCode;
+        }
+    } else {
+        self.didNotifyCompletion = NO;
+        self.lastNotifiedCode = nil;
+    }
 }
 #pragma mark - set方法
 -(void)setVerificationCodeNum:(NSInteger)VerificationCodeNum{

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PZXVerificationCodeViewDelegate <NSObject>
+@optional
+- (void)codeInputViewDidFinishInput:(NSString *)code;
+@end
+
 @interface PZXVerificationCodeView : UIView
 
 @property(nonatomic,assign)NSInteger VerificationCodeNum;//验证码位数
@@ -38,6 +43,8 @@
 @property (nonatomic, strong)NSMutableArray *textFieldArray;//放textField的array用于在外面好取消键盘
 
 @property (nonatomic, assign)UIKeyboardType pzx_keyboardType;//键盘类型
+
+@property (nonatomic, weak) id<PZXVerificationCodeViewDelegate> delegate;
 
 -(void)pzx_becomeFirstResponder:(NSInteger)index;
 

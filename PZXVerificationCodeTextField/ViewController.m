@@ -10,7 +10,7 @@
 #import "PZXVerificationCodeView.h"
 #import "PZXVerificationCodeTextField-Swift.h" // 自动生成的Swift桥接头文件
 
-@interface ViewController () <PZXCodeInputViewDelegate>
+@interface ViewController () <PZXCodeInputViewDelegate, PZXVerificationCodeViewDelegate>
 
 @property(nonatomic,strong)PZXVerificationCodeView *cellView;
 
@@ -45,6 +45,7 @@
     //    _pzxView.isSecure = YES;//密文
     _cellView.Spacing = 0;//每个格子间距属性
     [self.view addSubview:_cellView];
+    _cellView.delegate = self;
     
     _SpacingView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 60)];
     _SpacingView.selectedColor = [UIColor blueColor];
@@ -57,6 +58,7 @@
     _SpacingView.Spacing = 6;//每个格子间距属性
     _SpacingView.pzx_keyboardType = UIKeyboardTypeDecimalPad;
     [self.view addSubview:_SpacingView];
+    _SpacingView.delegate = self;
     
     
     _grayView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(0, 300, self.view.frame.size.width, 60)];
@@ -69,6 +71,7 @@
     //    _pzxView.isSecure = YES;//密文
     _grayView.Spacing = 6;//每个格子间距属性
     [self.view addSubview:_grayView];
+    _grayView.delegate = self;
     
     
     _bottomLineInputView = [[PZXVerificationCodeView alloc]initWithFrame:CGRectMake(16, 400, self.view.frame.size.width - 32, 60)];
@@ -79,6 +82,7 @@
     _bottomLineInputView.lineStyle = true;
     _bottomLineInputView.Spacing = 16;//每根线间距属性
     [self.view addSubview:_bottomLineInputView];
+    _bottomLineInputView.delegate = self;
     
     
     _codeInputView = [[PZXCodeInputView alloc] initWithNumberOfFields:4];
@@ -147,5 +151,12 @@
 - (void)codeInputViewDidFinishInput:(PZXCodeInputView *)inputView code:(NSString *)code {
     NSLog(@"Code entered: %@", code);
     // 在这里处理输入完成后的逻辑
+}
+- (void)codeInputViewDidFinishInput:(NSString *)code {
+    NSLog(@"OC Code entered: %@", code);
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"输入完成" message:code preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 @end
